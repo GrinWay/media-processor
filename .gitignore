@@ -1,0 +1,126 @@
+###> app ###
+*.exe
+/bundles/
+private.*
+.idea/
+###< app ###
+
+###> symfony/framework-bundle ###
+# https://symfony.com/doc/current/deployment.html
+# composer dump-env prod
+/.env.local.php
+
+/coverage
+/mercure/windows
+/drivers/
+/.env.local
+/.env.*.local
+/*.local
+
+/public/*
+!/public/favicon.ico
+!/public/yandex_f907fc465b452fc8.html
+!/public/robots.txt
+!/public/sitemap.xml
+!/public/index.php
+
+!/public/dynamic/
+/public/dynamic/*
+!/public/dynamic/media/
+!/public/dynamic/file/
+/public/dynamic/media/*
+/public/dynamic/file/*
+!/public/dynamic/media/image/
+!/public/dynamic/file/tg_bot_command_reply/
+!/public/dynamic/file/tg_bot_keyword_reply/
+!/public/dynamic/file/tg_bot_def_mess_reply/
+/public/dynamic/media/image/*
+/public/dynamic/file/tg_bot_command_reply/*
+/public/dynamic/file/tg_bot_keyword_reply/*
+/public/dynamic/file/tg_bot_def_mess_reply/*
+!/public/dynamic/media/image/tariff/
+/public/dynamic/media/image/tariff/*
+
+!/public/dynamic/file/tg_bot_command_reply/.gitignore
+!/public/dynamic/file/tg_bot_keyword_reply/.gitignore
+!/public/dynamic/file/tg_bot_def_mess_reply/.gitignore
+
+!/public/dynamic/media/image/tariff/gif/
+/public/dynamic/media/image/tariff/gif/*
+!/public/dynamic/media/image/tariff/gif/.gitignore
+
+!/public/dynamic/media/image/tariff/photo/
+/public/dynamic/media/image/tariff/photo/*
+!/public/dynamic/media/image/tariff/photo/.gitignore
+
+!/public/dynamic/media/image/user/
+/public/dynamic/media/image/user/*
+!/public/dynamic/media/image/user/photo/
+/public/dynamic/media/image/user/photo/*
+!/public/dynamic/media/image/user/photo/.gitignore
+
+
+/private/*
+!/private/dynamic/
+
+!/private/dynamic/
+/private/dynamic/*
+!/private/dynamic/media/
+!/private/dynamic/file/
+/private/dynamic/media/*
+/private/dynamic/file/*
+!/private/dynamic/media/image/
+!/private/dynamic/file/tg_bot_command_reply/
+!/private/dynamic/file/tg_bot_keyword_reply/
+!/private/dynamic/file/tg_bot_def_mess_reply/
+/private/dynamic/media/image/*
+/private/dynamic/file/tg_bot_command_reply/*
+/private/dynamic/file/tg_bot_keyword_reply/*
+/private/dynamic/file/tg_bot_def_mess_reply/*
+!/private/dynamic/media/image/tariff/
+/private/dynamic/media/image/tariff/*
+
+!/private/dynamic/file/tg_bot_command_reply/.gitignore
+!/private/dynamic/file/tg_bot_keyword_reply/.gitignore
+!/private/dynamic/file/tg_bot_def_mess_reply/.gitignore
+
+!/private/dynamic/media/image/tariff/gif/
+/private/dynamic/media/image/tariff/gif/*
+!/private/dynamic/media/image/tariff/gif/.gitignore
+
+!/private/dynamic/media/image/tariff/photo/
+/private/dynamic/media/image/tariff/photo/*
+!/private/dynamic/media/image/tariff/photo/.gitignore
+
+!/private/dynamic/media/image/user/
+/private/dynamic/media/image/user/*
+!/private/dynamic/media/image/user/photo/
+/private/dynamic/media/image/user/photo/*
+!/private/dynamic/media/image/user/photo/.gitignore
+
+
+/config/secrets/*/*.decrypt.private.php
+/config/secrets/*.decrypt.private.php
+/config/secrets/*private*
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+###> symfony/phpunit-bridge ###
+.phpunit.result.cache
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> symfony/webpack-encore-bundle ###
+/node_modules/
+npm-debug.log
+yarn-error.log
+###< symfony/webpack-encore-bundle ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+###< phpunit/phpunit ###
+
+###> lexik/jwt-authentication-bundle ###
+/config/jwt/*.pem
+###< lexik/jwt-authentication-bundle ###

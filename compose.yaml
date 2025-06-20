@@ -1,0 +1,6 @@
+networks:
+  default:
+    name: 'app'
+    driver: 'bridge'
+
+#services:
