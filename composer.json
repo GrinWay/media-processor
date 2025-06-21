@@ -84,7 +84,9 @@
             "importmap:install": "symfony-cmd",
             "sass:build": "symfony-cmd",
             "requirements-checker": "script",
-            "php-cs-fixer fix --diff --dry-run": "script"
+            "php-cs-fixer fix --diff --dry-run": "script",
+            "deptrac --config-file=deptrac/layers.yaml": "script",
+            "deptrac --config-file=deptrac/modules.yaml": "script"
         },
         "post-install-cmd": [
             "@auto-scripts"

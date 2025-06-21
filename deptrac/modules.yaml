@@ -1,9 +1,7 @@
 parameters:
     paths:
     - ../src
-    exclude_files:
-    - '#.*\/src\/.*\/Infrastructure\/Adapter\/.*#'
-    - '#.*\/src\/.*\/Infrastructure\/Api\/.*#'
+
     layers:
     -   name: Share
         collectors:
@@ -13,6 +11,11 @@ parameters:
         collectors:
         -   type: directory
             value: /src/Compressor/.*
+
     ruleset:
+        Share:
         Compressor:
-        - Share
+
+    exclude_files:
+    - '#.*\/src\/.*\/Infrastructure\/Adapter\/.*#'
+    - '#.*\/src\/.*\/Infrastructure\/Api\/.*#'
