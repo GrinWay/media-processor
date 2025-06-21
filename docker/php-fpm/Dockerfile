@@ -38,6 +38,7 @@ RUN HTTPDUSER=$(ps axo user,comm | grep -E '[a]pache|[h]ttpd|[_]www|[w]ww-data|[
 RUN rm -rf ./var
 RUN php bin/console cache:clear
 RUN php bin/console assets:install
+RUN php bin/console sass:build
 
 CMD php-fpm
 
