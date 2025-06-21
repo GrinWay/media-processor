@@ -1,6 +1,14 @@
 twig:
     file_name_pattern: '*.twig'
+    strict_variables: false
+    globals: ~
+    default_path: '%kernel.project_dir%/templates'
+    paths:
+        '%kernel.project_dir%/templates/share/infrastructure/home': 'home'
+        '%kernel.project_dir%/templates/share/unit': 'unit'
 
-when@test:
+when@test: &like_for_test
     twig:
         strict_variables: true
+
+when@dev: *like_for_test
