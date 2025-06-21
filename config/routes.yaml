@@ -1,5 +1,11 @@
-controllers:
+share_controllers:
     resource:
         path: ../src/Share/Infrastructure/Controller/
         namespace: App\Share\Infrastructure\Controller
+    type: attribute
+
+compressor_controllers:
+    resource:
+        path: ../src/Compressor/Infrastructure/Controller/
+        namespace: App\Compressor\Infrastructure\Controller
     type: attribute

@@ -36,7 +36,8 @@ RUN apk add acl
 RUN HTTPDUSER=$(ps axo user,comm | grep -E '[a]pache|[h]ttpd|[_]www|[w]ww-data|[n]ginx' | grep -v root | head -1 | cut -d\  -f1)
 
 RUN rm -rf ./var
-#RUN composer install
+RUN php bin/console cache:clear
+RUN php bin/console assets:install
 
 CMD php-fpm
 

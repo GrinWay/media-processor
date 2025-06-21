@@ -1,0 +1,3 @@
+parameters:
+    app.compressor.input_abs_path: '%env(resolve:APP_COMPRESSOR_INPUT_ABS_PATH)%'
+    app.compressor.output_abs_path: '%env(resolve:APP_COMPRESSOR_OUTPUT_ABS_PATH)%'

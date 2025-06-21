@@ -4,6 +4,17 @@ networks:
     driver: 'bridge'
 
 services:
+  ###> doctrine/doctrine-bundle ###
+  database:
+    container_name: '${APP_DOCKER_CONTAINER_PREFIX}-db'
+    image: 'mysql:8.0-debian'
+    restart: 'unless-stopped'
+    ports:
+    - '3306:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: 'root'
+  ###< doctrine/doctrine-bundle ###
+
   php-fpm:
     container_name: '${APP_DOCKER_CONTAINER_PREFIX}-php-fpm'
     restart: 'unless-stopped'
