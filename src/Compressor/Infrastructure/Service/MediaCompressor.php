@@ -14,7 +14,8 @@ class MediaCompressor implements MediaCompressorInterface
         private readonly string $compressorInputAbsPath,
         #[Autowire(param: 'app.compressor.output_abs_path')]
         private readonly string $compressorOutputAbsPath,
-    ) {}
+    ) {
+    }
 
     public function compress(): static
     {

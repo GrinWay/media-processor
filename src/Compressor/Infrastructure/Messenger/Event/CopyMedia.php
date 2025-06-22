@@ -11,5 +11,6 @@ class CopyMedia
     public function __construct(
         ?string $command,
         UploadedFile ...$files,
-    ) {}
+    ) {
+    }
 }

@@ -10,7 +10,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Messenger\MessageBusInterface;
 use Symfony\UX\LiveComponent\Attribute\AsLiveComponent;
 use Symfony\UX\LiveComponent\Attribute\LiveAction;
-use Symfony\UX\LiveComponent\Attribute\LiveProp;
 use Symfony\UX\LiveComponent\ComponentWithFormTrait;
 use Symfony\UX\LiveComponent\DefaultActionTrait;
 
@@ -28,13 +27,14 @@ class MediaCompressorForm extends AbstractController
         $form = $this->getForm();
 
         $command = $form->get('command')->getData();
-        $files = $request->files->all('media');
+
+        // TODO: Don't know why, but it's an empty array
+        $medias = $request->files->all('media');
 
         // TODO: current dispatch
         //        $this->eventBus->dispatch(new CopyMedia($command, $files));
 
         $parameters = [];
-
         return $this->redirectToRoute('app_compressor_index', $parameters);
     }
 

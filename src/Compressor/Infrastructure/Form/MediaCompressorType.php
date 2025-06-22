@@ -15,20 +15,11 @@ class MediaCompressorType extends AbstractType
         $builder
             ->add('command', TextareaType::class, options: [
                 'label' => false,
-                'attr' => [
-                    'disabled' => null,
-                ],
             ])
             ->add('media', FileType::class, options: [
                 'label' => false,
                 'multiple' => true,
             ])
         ;
-    }
-
-    public function configureOptions(OptionsResolver $resolver): void
-    {
-        $resolver->setDefaults([
-        ]);
     }
 }
